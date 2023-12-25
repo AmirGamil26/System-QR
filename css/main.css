@@ -1,0 +1,125 @@
+/*  ========= Reset =========  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    font-size: 15px;
+}
+ul li{
+    list-style: none;
+}
+/*  ========= General =========  */
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-Regular.ttf');
+    font-weight: 400;
+}@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-Bold.ttf');
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: var(--Light-gray);
+    font-family: 'Outfit';
+    position: relative;
+}
+/*  ========= Main =========  */
+main{
+    background-color: var(--White);
+    width: 35%;
+    border-radius: 12px;
+    padding: 1em 1em;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+}
+main img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+main h1{
+    font-size: 36px;
+    margin: 0.5em 0;
+}
+main p{
+    font-size: 25px;
+    margin: 0.5em 0;
+    color: var(--Grayish-blue);
+}
+.attribution{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    font-weight: normal;
+    margin-top: 1em;
+}
+/*  ========= Media Query =========  */
+@media screen and (max-width: 600px) {
+    main{
+        width: 90%;
+    }
+    main h1{
+        font-size: 27px;
+    }
+    main p{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 600px) {
+    main{
+        width: 90%;
+    }
+    main h1{
+        font-size: 27px;
+    }
+    main p{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 768px) {
+    main{
+        width: 70%;
+    }
+    main h1{
+        font-size: 27px;
+    }
+    main p{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 992px) {
+    main{
+        width: 50%;
+    }
+    main h1{
+        font-size: 27px;
+    }
+    main p{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    main{
+        width: 35%;
+    }
+    main h1{
+        font-size: 37px;
+    }
+    main p{
+        font-size: 27px;
+    }
+}
